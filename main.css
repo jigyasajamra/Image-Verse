@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  body {
+    background: #f6f6f6;
+  }
+  * a {
+    text-decoration: none;
+    color: #151515;
+  }
+  .pinterest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.938rem;
+    
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    
+  }
+  .left .logo {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left .logo:hover {
+    background-color: #e5e5e5;
+  }
+  .left .logo i {
+    color: #e60022;
+    font-size:40px;
+  }
+  .left .home {
+    font-weight: bold;
+    height: 3rem;
+    color: #fff;
+    padding: 1rem;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.563rem;
+  }
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar .img {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .avatar .img img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .search {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #e3e3e3;
+  }
+  .search:hover {
+    background: #c9c9c9;
+  }
+  .search i {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #767676;
+  }
+  .search input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding-right: 1rem;
+  }
+  .search input::placeholder {
+    color: #767676;
+    font-size: 1rem;
+  }
+  .right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+    
+  }
+  .right button{
+    margin-left: 15px;
+    height: 2rem;
+    width:100px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #E60022;
+    color: white;
+    border:none
+  }
+  .items {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .items:hover {
+    background: #e5e5e5;
+  }
+  .items i {
+    font-size: 1rem;
+    color: #767676;
+  }
+  .items-down {
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+  }
+  .items-down:hover {
+    background: #e5e5e5;
+  }
+  .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-gap: 40px;
+
+  }
+  .content img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .image{
+    display: none;
+    width: 15vw;
+    height: 6vh;
+   margin-left: 45vw;
+   margin-bottom: 5px;
+   border-radius: 20px;
+   background-color:#E60022;
+  font-weight: light;
+  color: #fff;
+
+  }
+  .image:hover{
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+  .pinterest {
+    flex-direction:row;
+    padding: 1rem;
+    
+  }
+
+  .left, .right {
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 3%;
+    
+  }
+
+  .search {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .image {
+    width: 80vw;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .left .logo i {
+    font-size: 30px;
+  }
+
+  .left .home {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .search i {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .search input::placeholder {
+    font-size: 0.875rem;
+  }
+
+  .right button {
+    width: 80px;
+    font-size: 0.875rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .content img {
+    height: 350px;
+  }
+
+  .image {
+    width: 90vw;
+  }
+}
+ 
